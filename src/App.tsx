@@ -228,10 +228,11 @@ export default function App() {
             </div>
 
             <Canvas camera={{ position: [2.8, 1.6, 3.8], fov: 40 }}>
-              <ambientLight intensity={0.4} />
-              <directionalLight position={[8, 10, 5]} intensity={1.4} />
-              <directionalLight position={[-10, -8, -5]} intensity={0.5} color="#1d4ed8" />
-              <pointLight position={[0, 3, 0]} intensity={0.5} color="#ef4444" />
+              <ambientLight intensity={0.8} />
+              <directionalLight position={[10, 20, 10]} intensity={2.5} color="#ffffff" />
+              <directionalLight position={[-10, -20, -10]} intensity={1.5} color="#93c5fd" />
+              <pointLight position={[0, 5, 5]} intensity={2.0} color="#ffffff" />
+              <pointLight position={[0, -5, -5]} intensity={1.0} color="#ef4444" />
               <Stars radius={80} depth={50} count={1200} factor={3} saturation={0} fade speed={0.4} />
               <CubeSatModel
                 pitch={imuData?.pitch || 0}
